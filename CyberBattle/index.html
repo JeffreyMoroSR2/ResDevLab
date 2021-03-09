@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>CyberBattle</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="styles/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+        
+    .mySlides {display:none;}
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link href="styles/blog.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/gallery.css">
+  </head>
+  <body>
+<div class="container">
+    <header class="blog-header py-3">
+          
+<div class="nav-scroller py-1 mb-2 font-italic">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 text-muted" href="#about">About</a>
+      <a class="p-2 text-muted" href="#events">Events</a>
+      <a class="p-2 text-muted" href="#contacts">Contacts</a>
+      <a class="p-2 text-muted" id="reg_button" href="https://docs.google.com/forms/d/e/1FAIpQLSfJRWsFkbm_R7jBJ3ZAmLzSN5i2Nqt_s_fo4oZvv_lcgb22yw/viewform?usp=sf_link">Registration</a>
+    </nav>
+</div>    
+</header>
+  <div class="jumbotron p-4 p-md-5rounded font-italic" id="cyber_head">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 font-italic">CyberBattle</h1>
+      <p style="font-size: large;">
+        Welcome to our CyberBattle project<br>
+        Cybersecurity competitions and everything related to it
+      </p>
+    </div>
+  </div>
+        
+<div class="w3-content w3-display-container" style="padding-bottom: 10px;">
+  <img class="mySlides" src="img/img_test2.jpg" style="width:100%">
+  <img class="mySlides" src="img/img_test3.jpg" style="width:100%">
+  <img class="mySlides" src="img/img_test1.jpg" style="width:100%">
+  <img class="mySlides" src="img/img_test.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+        
+</div>
+
+ <main role="main" class="container">
+     
+     
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+     
+      
+  <div class="row font-italic">
+    <div class="col-md-8 blog-main" id="events">
+      <div class="blog-post">
+        <h2 class="blog-post-title">Events</h2>
+        <p>We are happy to present to you our CyberBattle platform. Here you can find information about cybersecurity competitions and capture-the-flag events at National Aviation University and our partners. </p>
+        <img src="img/coding.jpeg" style="width: 100%"/>
+      </div>
+
+    </div>
+
+    <aside class="col-md-4 blog-sidebar">
+      <div class="p-4 mb-3 rounded">
+        <h4 class="font-italic" id="about">About</h4>
+        <p class="mb-0 font-italic"><a href="files/Polozhennya.pdf" download>Положення про Мiжнародний конкурс студентських наукових робiт у галузi кiбербезпеки</a></p>
+      </div>
+
+      <div class="p-4">
+        <h4 class="font-italic">Other sites</h4>
+        <ol class="list-unstyled mb-0 font-italic">
+          <li><a href="http://cyberlab.fccpi.nau.edu.ua/">R&D Lab</a></li>
+          <li><a href="http://cyberconf.fccpi.nau.edu.ua/">Our Conferences</a></li>
+        </ol>
+      </div>
+
+      <div class="p-4" id="contacts">
+        <h4 class="font-italic">Contacts</h4>
+        <ol class="list-unstyled font-italic">
+          <li><a href="https://www.facebook.com/NAUCyberLab/">Facebook</a></li>
+          <li>+38 (044) 406 75 37</li>
+          <li>cyber.lab@nau.edu.ua </li>
+        </ol>
+      </div>
+    </aside>
+
+  </div>
+
+</main>
+</body>
+</html>
